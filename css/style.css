@@ -1,9 +1,9 @@
 /********** Template CSS **********/
 :root {
-    --primary: #348E38;
-    --secondary: #525368;
-    --light: #E8F5E9;
-    --dark: #0F4229;
+    --primary: #8B4513;  /* Saddle Brown - Main teddy bear color */
+    --secondary: #A0522D;  /* Sienna - Secondary brown shade */
+    --light: #F5DEB3;  /* Wheat - Light brown shade */
+    --dark: #000000;
 }
 
 .back-to-top {
@@ -166,8 +166,25 @@ h6,
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: rgba(15, 66, 41, .6);
+    background: rgba(139, 69, 19, 0.4);  /* Reduced opacity from 0.8 to 0.4 */
     z-index: 1;
+}
+
+.carousel-caption .btn-primary {
+    background-color: #FFFFFF;  /* White background */
+    color: #8B4513;  /* Saddle Brown text */
+    border: 2px solid #8B4513;  /* Saddle Brown border */
+    font-weight: 600;
+    padding: 12px 30px;
+    transition: all 0.3s ease;
+}
+
+.carousel-caption .btn-primary:hover {
+    background-color: #8B4513;  /* Saddle Brown background on hover */
+    color: #FFFFFF;  /* White text on hover */
+    border-color: #8B4513;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .carousel-control-prev,
@@ -199,7 +216,7 @@ h6,
 }
 
 .page-header {
-    background: linear-gradient(rgba(15, 66, 41, .6), rgba(15, 66, 41, .6)), url(../img/carousel-1.jpg) center center no-repeat;
+    background: linear-gradient(rgba(139, 69, 19, 0.6), rgba(139, 69, 19, 0.6)), url(../img/carousel-1.jpg) center center no-repeat;
     background-size: cover;
 }
 
@@ -227,7 +244,7 @@ h6,
 /*** Facts & Quote ***/
 .facts,
 .quote {
-    background: rgba(15, 66, 41, .6);
+    background: rgba(139, 69, 19, 0.8);
 }
 
 
@@ -263,13 +280,13 @@ h6,
 }
 
 .service-item .service-text {
-    background: #FFFFFF;
+    background: #F5DEB3;
     box-shadow: 0 0 45px rgba(0, 0, 0, .08);
     transition: .3s;
 }
 
 .service-item:hover .service-text {
-    background: rgba(15, 66, 41, .6);
+    background: rgba(139, 69, 19, 0.8);
 }
 
 .service-item .service-text h4,
@@ -316,14 +333,14 @@ h6,
 /*** Project Portfolio ***/
 #portfolio-flters {
     display: inline-block;
-    background: var(--light);
+    background: #F5DEB3;
     padding: 10px 15px;
 }
 
 #portfolio-flters li {
     display: inline-block;
     font-weight: 500;
-    color: var(--primary);
+    color: #8B4513;  /* Saddle Brown */
     cursor: pointer;
     transition: .5s;
     border-bottom: 2px solid transparent;
@@ -331,8 +348,8 @@ h6,
 
 #portfolio-flters li:hover,
 #portfolio-flters li.active {
-    color: var(--dark);
-    border-color: var(--dark);
+    color: #A0522D;  /* Sienna */
+    border-color: #A0522D;
 }
 
 .portfolio-inner {
@@ -348,7 +365,7 @@ h6,
     height: 100%;
     top: 0;
     left: 0;
-    background: rgba(15, 66, 41, .6);
+    background: rgba(139, 69, 19, 0.6);  /* Saddle Brown with transparency */
     transition: .5s;
 }
 
@@ -383,13 +400,13 @@ h6,
 }
 
 .portfolio-inner .portfolio-text .btn {
-    background: var(--light);
-    color: var(--primary);
+    background: #F5DEB3;  /* Wheat */
+    color: #8B4513;  /* Saddle Brown */
 }
 
 .portfolio-inner .portfolio-text .btn:hover {
-    background: var(--primary);
-    color: var(--light);
+    background: #8B4513;  /* Saddle Brown */
+    color: #F5DEB3;  /* Wheat */
 }
 
 
@@ -405,7 +422,7 @@ h6,
     left: -100%;
     bottom: 45px;
     padding: 1.5rem;
-    background: #FFFFFF;
+    background: #F5DEB3;  /* Wheat */
     border-radius: 0 4px 4px 0;
     opacity: 0;
     transition: .5s;
@@ -416,14 +433,22 @@ h6,
     opacity: 1;
 }
 
+.team-item .team-text h4 {
+    color: #8B4513;  /* Saddle Brown */
+}
+
+.team-item .team-text p {
+    color: #A0522D;  /* Sienna */
+}
+
 .team-item .team-social .btn {
-    background: var(--light);
-    color: var(--primary);
+    background: #F5DEB3;  /* Wheat */
+    color: #8B4513;  /* Saddle Brown */
 }
 
 .team-item .team-social .btn:hover {
-    background: var(--primary);
-    color: var(--light);
+    background: #8B4513;  /* Saddle Brown */
+    color: #F5DEB3;  /* Wheat */
 }
 
 .team-item .team-img .team-social {
@@ -447,7 +472,6 @@ h6,
 
 
 /*** Testimonial ***/
-
 .testimonial-carousel .owl-item img {
     width: 100px;
     height: 100px;
@@ -466,8 +490,8 @@ h6,
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--primary);
-    background: var(--light);
+    color: #8B4513;  /* Saddle Brown */
+    background: #F5DEB3;  /* Wheat */
     border-radius: 4px;
     font-size: 22px;
     transition: .5s;
@@ -475,40 +499,46 @@ h6,
 
 .testimonial-carousel .owl-nav .owl-prev:hover,
 .testimonial-carousel .owl-nav .owl-next:hover {
-    background: var(--primary);
-    color: var(--light);
+    background: #8B4513;  /* Saddle Brown */
+    color: #F5DEB3;  /* Wheat */
+}
+
+.testimonial-item h4 {
+    color: #8B4513;  /* Saddle Brown */
+}
+
+.testimonial-item span {
+    color: #A0522D;  /* Sienna */
+}
+
+.btn-primary {
+    background-color: #8B4513;  /* Saddle Brown */
+    border-color: #8B4513;
+}
+
+.btn-primary:hover {
+    background-color: #A0522D;  /* Sienna */
+    border-color: #A0522D;
 }
 
 
 /*** Footer ***/
-.footer .btn.btn-link {
-    display: block;
-    margin-bottom: 5px;
-    padding: 0;
-    text-align: left;
-    color: var(--light);
-    font-weight: normal;
-    text-transform: capitalize;
-    transition: .3s;
+.footer {
+    background-color: #8B4513 !important;
 }
 
-.footer .btn.btn-link::before {
-    position: relative;
-    content: "\f105";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    margin-right: 10px;
+.footer .btn.btn-link {
+    color: #F5DEB3;
 }
 
 .footer .btn.btn-link:hover {
-    color: var(--primary);
-    letter-spacing: 1px;
-    box-shadow: none;
+    color: #F5DEB3;
+    opacity: 0.8;
 }
 
 .copyright {
     color: var(--light);
-    background: #072A19;
+    background: #A0522D;
 }
 
 .copyright a {
@@ -517,4 +547,142 @@ h6,
 
 .copyright a:hover {
     color: var(--primary);
+}
+
+/*** Features ***/
+.features .text-primary {
+    color: #8B4513 !important;  /* Saddle Brown */
+}
+
+.features .btn-square {
+    background: #F5DEB3;  /* Wheat */
+    color: #8B4513;  /* Saddle Brown */
+}
+
+.features .btn-square:hover {
+    background: #8B4513;  /* Saddle Brown */
+    color: #F5DEB3;  /* Wheat */
+}
+
+.features .text-center.rounded {
+    background: #F5DEB3;  /* Wheat */
+    box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+}
+
+.features .text-center.rounded h4 {
+    color: #8B4513;  /* Saddle Brown */
+}
+
+.features .btn-primary {
+    background-color: #8B4513;  /* Saddle Brown */
+    border-color: #8B4513;
+}
+
+.features .btn-primary:hover {
+    background-color: #A0522D;  /* Sienna */
+    border-color: #A0522D;
+}
+
+/*** About ***/
+.about .display-1 {
+    color: #8B4513;  /* Saddle Brown */
+}
+
+.about .text-primary {
+    color: #8B4513 !important;  /* Saddle Brown */
+}
+
+.about .border-start {
+    border-left-color: #8B4513 !important;  /* Saddle Brown */
+}
+
+.about .fa-award,
+.about .fa-users {
+    color: #8B4513;  /* Saddle Brown */
+}
+
+.about h4 {
+    color: #8B4513;  /* Saddle Brown */
+}
+
+.about span {
+    color: #A0522D;  /* Sienna */
+}
+
+.about .btn-primary {
+    background-color: #8B4513;  /* Saddle Brown */
+    border-color: #8B4513;
+}
+
+.about .btn-primary:hover {
+    background-color: #A0522D;  /* Sienna */
+    border-color: #A0522D;
+}
+
+/*** Icons ***/
+.fa-gift,
+.fa-map-marker-alt,
+.fa-camera,
+.fa-heart,
+.fa-award,
+.fa-users,
+.fa-phone-alt,
+.fa-envelope,
+.fa-arrow-right,
+.fa-check,
+.fa-eye,
+.fa-link,
+.fa-facebook-f,
+.fa-instagram,
+.fa-whatsapp,
+.fa-twitter,
+.fa-youtube,
+.fa-linkedin-in,
+.fa-arrow-up,
+.fa-home,
+.fa-star,
+.fa-crown {
+    color: #8B4513 !important;  /* Saddle Brown */
+}
+
+/* Hover states for social icons */
+.team-social .btn:hover .fa-facebook-f,
+.team-social .btn:hover .fa-instagram,
+.team-social .btn:hover .fa-whatsapp,
+.team-social .btn:hover .fa-twitter,
+.team-social .btn:hover .fa-youtube,
+.team-social .btn:hover .fa-linkedin-in {
+    color: #F5DEB3 !important;  /* Wheat */
+}
+
+/* Service item icons */
+.service-item .service-text .btn-square i {
+    color: #8B4513;  /* Saddle Brown */
+}
+
+.service-item:hover .service-text .btn-square i {
+    color: #F5DEB3;  /* Wheat */
+}
+
+/* Portfolio icons */
+.portfolio-inner .portfolio-text .btn i {
+    color: #8B4513;  /* Saddle Brown */
+}
+
+.portfolio-inner .portfolio-text .btn:hover i {
+    color: #F5DEB3;  /* Wheat */
+}
+
+/* Footer icons */
+.footer .btn-outline-light:hover i {
+    color: #8B4513 !important;  /* Saddle Brown */
+}
+
+/* Back to top icon */
+.back-to-top i {
+    color: #8B4513;  /* Saddle Brown */
+}
+
+.back-to-top:hover i {
+    color: #F5DEB3;  /* Wheat */
 }

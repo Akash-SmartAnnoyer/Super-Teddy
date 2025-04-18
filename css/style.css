@@ -3,7 +3,7 @@
     --primary: #8B4513;  /* Saddle Brown - Main teddy bear color */
     --secondary: #A0522D;  /* Sienna - Secondary brown shade */
     --light: #F5DEB3;  /* Wheat - Light brown shade */
-    --dark: #000000;
+    --dark: #654321;  /* Dark Brown */
 }
 
 .back-to-top {
@@ -551,7 +551,7 @@ h6,
 
 /*** Features ***/
 .features .text-primary {
-    color: #8B4513 !important;  /* Saddle Brown */
+    color: var(--primary) !important;
 }
 
 .features .btn-square {
@@ -589,7 +589,7 @@ h6,
 }
 
 .about .text-primary {
-    color: #8B4513 !important;  /* Saddle Brown */
+    color: var(--primary) !important;
 }
 
 .about .border-start {
